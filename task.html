@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    *{
+        padding: 0;
+        margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+height: 100vh;
+width: 100vh;
+overflow: hidden;
+background-color: black;
+
+
+    }
+
+    #container {
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+#solar_system {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    animation: rotate 50s linear infinite;
+    
+
+}
+
+#sun {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 160px;
+  transition: translate(-50%, -50%);
+  background-color: red;
+  animation: pulse-sun 2s linear infinite;
+
+}
+#planet {
+      position: absolute;
+      top: -75px;
+      left: 50%;
+      transform: translate( -50%, 0);
+      height: 150px;
+      width: 150px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      animation: rotate 20s linear infinite;
+}
+
+#earth {
+
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate( -50px, -50px);
+    background-color: blue;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+     
+}
+
+#moon {
+    position: absolute;
+    top: -10px;
+    left: 60%;
+    transform: translate( -50px, 0);
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+    animation: pulse-moon 2s linear infinite;
+ 
+}
+
+@keyframes pulse-sun {
+
+    from{
+       box-shadow: 0 0 0 0 red;
+    }
+    to{
+        box-shadow: 0 0 0 25px rgba(0,0,0,0);
+    }
+}
+@keyframes pulse-moon {
+
+from{
+   box-shadow: 0 0 0 0 white;
+}
+to{
+    box-shadow: 0 0 0 15px rgba(0,0,0,0);
+}
+}
+@keyframes rotate { 
+    from {
+
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+</style>
+<body style="background-image: url('https://cdn.pixabay.com/photo/2016/06/05/07/59/stars-1436950_960_720.jpg');">
+     <section id="container">
+<div id="solar_system">
+
+    <div id="sun"></div>
+    <div id="planet">
+        <div id="earth"></div>
+        <div id="moon"></div>
+    </div>
+</div>
+
+
+     </section>
+</html>
