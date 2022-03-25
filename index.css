@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+
 
 
     *{
@@ -122,18 +114,3 @@ to{
     
 }
 
-</style>
-<body style="background-image: url('https://cdn.pixabay.com/photo/2016/06/05/07/59/stars-1436950_960_720.jpg');">
-     <section id="container">
-<div id="solar_system">
-
-    <div id="sun"></div>
-    <div id="planet">
-        <div id="earth"></div>
-        <div id="moon"></div>
-    </div>
-</div>
-
-
-     </section>
-</html>
